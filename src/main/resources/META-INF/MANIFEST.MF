@@ -1,0 +1,5 @@
+Custom-Protocol: s3
+Protocol-Label: Amazon S3
+Custom-UI: amazonS3Site.html
+Custom-Site: com.axway.ssc.st.plugins.site.amazon.s3.S3Site
+Class-Path: s3/lib/aws-java-sdk-1.9.6.jar	s3/lib/aws-java-sdk-core-1.9.6.jar	s3/lib/aws-java-sdk-s3-1.9.6.jar

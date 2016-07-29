@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<link rel="stylesheet" type="text/css" href="/coreadmin/servlet/pluginContent/css/amazonS3Style.css?pluginName=s3" />
+<title>AWS S3 Transfer Plugin</title>
+</head>
+<body>
+	<script src="/coreadmin/servlet/pluginContent/jscript/amazonS3Script.js?pluginName=s3" />
+	<div class="div1">
+		<img src="/coreadmin/servlet/pluginContent/images/aws-s3.jpg?pluginName=s3" />
+		<b>AWS S3 Settings</b>
+	</div>
+	<br/>
+	<table border="0" cellpadding="1" cellspacing="0">
+		<tr>
+			<td style="padding-left: 50px;" nowrap="nowrap">Network Zone:*</td>
+			<td>
+				<select id="networkZone" name="networkZone" />
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 50px;" nowrap="nowrap" width="100">Bucket Name:*</td>
+			<td>
+				<input type="text" size="40" id="awsBucketName" name="awsBucketName" value="" />
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 50px;" nowrap="nowrap">Region:*</td>
+			<td>
+				<select id="awsRegion" name="awsRegion">
+					<option value="us-west-1">US West (Northern California)</option>
+					<option value="us-west-2">US West (Oregon)</option>
+					<option value="us-east-1">US East</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td calspan="2"><b>AWS Credentials</b></td>
+		</tr>
+		<tr>
+			<td style="padding-left: 50px;" nowrap="nowrap">Access Key Id:*</td>
+			<td colspan="2">
+				<input type="text" size="60" id="accessKeyId" name="accessKeyId" value=""/>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 50px;" nowrap="nowrap">Secret Access Key:*</td>
+			<td colspan="2">
+				<input type="password" size="60" id="secretAccessKey" name="secretAccessKey" value=""/>
+			</td>
+		</tr>
+		<tr>
+			<td calspan="2"><b>Download Settings</b></td>
+		</tr>
+		<tr>
+			<td style="padding-left: 50px;" nowrap="nowrap">Download Object Key:</td>
+			<td>
+				<label class="default-input">
+					<input type="text" size="60" id="downloadObjectKey" name="downloadObjectKey" value="" />
+				</label>
+			</td>
+		</tr>
+		<tr>
+			<td calspan="2"><b>Transfer Settings</b></td>
+		</tr>
+		<tr>
+			<td style="padding-left: 50px;" nowrap="nowrap">Upload Mode: </td>
+			<td colspan="2">
+				<select name="transferMode" id="transferMode">
+					<option value="single">single</option>
+					<option value="auto">auto</option>
+					<option value="multipart">multipart</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-left: 50px;" nowrap="nowrap">Cache Control:</td>
+			<td colspan="2">
+				<input type="text" size="40" id="cacheControl" name="cacheControl" value=""/>
+			</td>
+		</tr>
+		<tr>
+				<td style="padding-left: 50px;" nowrap="nowrap">Content Disposition:</td>
+				<td colspan="2">
+					<input type="text" size="40" id="contentDisposition" name="contentDisposition" value=""/>
+				</td>
+		</tr>
+		<tr>
+				<td style="padding-left: 50px;" nowrap="nowrap">User Metadata:</td>
+				<td colspan="2">
+					<textarea size="250" id="userMetadata" name="userMetadata" value=""/>
+				</td>
+		</tr>
+	</table>
+</body>
+</html>
