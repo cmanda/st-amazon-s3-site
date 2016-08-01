@@ -1,6 +1,6 @@
 # st-amazon-s3-site
 
-## SecureTransport 5.3.3 Service Provider Extension/Interface
+## SecureTransport 5.3.3 Service Provider Extension/Interface with AWS S3
 
 Sample site to provide extension with Amazon AWS S3. Utilizes AWS SDK to provide Server Initiated Transfers for PUT/GET to S3 buckets.
 
