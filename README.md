@@ -1,4 +1,6 @@
-# st-amazon-s3-site
+# (Deprecated) st-amazon-s3-site
+
+## NOTE: The v5.3.6 has out of the box support. So we don't need to hack around ;-) 
 
 ## Axway SecureTransport 5.3.3 Service Provider Extension/Interface with AWS S3
 
